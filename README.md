@@ -1,4 +1,7 @@
-# Redesigning an Existing Website
+# Redesigning an Existing Website 👩🏽‍💻
+## _Codo a Codo 4.0_ 🚀
+   
+## _Profe: Pablo Rovira_ [Sairov](https://github.com/sairov)👨🏽‍🏫
 
 Tareas a realizar:
 
