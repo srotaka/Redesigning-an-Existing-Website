@@ -1,0 +1,11 @@
+1. Hice un nuevo logo, con imagen, colores y tipografías distintas
+2. Cambié el favicon
+3. Cambié la tipografía del sitio
+4. Quité el efecto "round pill" al hacer hover sobre los links de la navbar (personalmente no me gusta, jeje)
+5. Cambié la imagen del landing
+6. Cambié la forma de los botones (insisto: no me gusta la forma "round pill", jijiji)
+7. Agregué sección "Nuestro Equipo"
+8. Cambié colores de la sección "Footer"
+9. Cambié footer inferior
+10. Cambié diseño de filtros en sección "Servicios"
+11. Reemplacé los textos "Lorem ipsum..." 

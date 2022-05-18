@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!----- definición de html 5 -->
+<html lang="es">
+<!----- definición del lenguaje -->
+<!------Inicio del  HEAD -->
+
+<head>
+    <title>OTAKA Silvia - My Version</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <!----- icono para apple y safari -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+    <!-- tipo de letra -->
+    <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<!-----
+.text-primary  		azul
+.text-secondary		gris
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste
+.text-light			blanco
+.text-dark			negro
+.text-muted			gris oscuro
+.text-white			gris claro
+-->
+<!------------------------------------------------------------------ Fin del  HEAD -->
+
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                <img src="assets/img/logoJs.png" width="195" height="60"/>
+
+                <!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+            </a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="work.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-pink'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-pink'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-pink'></i></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!----------------------------------------------------------- Fin de los iconos del menu -->
+
+
+    <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+    <div class="banner-wrapper bg-light">
+        <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
+
+            <!-- Start slider -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <!-- class="active" Se requiere un elemento activo inicial
+La .activeclase debe agregarse a una de las diapositivas. De lo contrario, el carrusel no será visible. -->
+
+                <div class="carousel-inner">
+
+                    <!-- Primer elemento del carrousel 
+Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->
+
+                    <div class="carousel-item active">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
+                                    <!--typo-space-line = clase configurada en el css 
+					display-3 = <H3> 
+					Where property is one of:
+
+						m - for classes that set margin
+						p - for classes that set padding
+						Where sides is one of:
+
+						t - for classes that set margin-top or padding-top
+						b - for classes that set margin-bottom or padding-bottom
+						l - for classes that set margin-left or padding-left
+						r - for classes that set margin-right or padding-right
+						x - for classes that set both *-left and *-right
+						y - for classes that set both *-top and *-bottom
+						blank - for classes that set a margin or padding on all 4 sides of the element
+						ejemplo: 
+						<div class="mx-auto" style="width: 200px;">
+						  Centered element
+						</div>
+					
+					-->
+                                    Desarrollamos estrategias<br> para tu negocio
+                                </h1>
+                                <p class="banner-body text-muted py-3 mx-0 px-0">
+                                    Nos dedicamos al SEO y al marketing posicionando tu web en <a rel="nofollow"
+                                        href="https://google.com" target="_parent">Google</a>.
+                                </p>
+                                <a class="banner-button btn btn-outline-primary btn-lg px-4" href="#"
+                                    role="button">Comenzar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!----------------------------------------------------------- Nuevo Item del Carrousel-->
+
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Optimizamos publicaciones <br> en redes sociales
+                                </h1>
+                                <p class="banner-body text-muted py-3">
+                                    Somos expertos en comunicación social.
+                                </p>
+                                <a class="banner-button btn btn-outline-primary btn-lg px-4" href="#"
+                                    role="button">Inicio</a>
+                                <!--role="button" indica que un boton no apunta a una url sino que hace otra cosa-->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!----------------------------------------------------------- Nuevo Item del Carrousel-->
+                    <div class="carousel-item">
+
+                        <div class="py-5 row d-flex align-items-center">
+                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                                <h1 class="banner-heading h1 display-3 mb-0 pb-3 mx-0 px-0 light-300">
+                                    Nuestras campañas de venta <br> posicionan tu marca.
+                                </h1>
+                                <p class="banner-body text-muted py-3">
+                                    Nos dedicamos a generar leads y conversiones de venta <br> en tu página web en forma
+                                    automatizada.
+                                </p>
+                                <a class="banner-button btn btn-outline-primary btn-lg px-4" href="#"
+                                    role="button">Comenzar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-------------------------------------------------------Flechas del carrousel   -->
+                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button"
+                    data-bs-slide="prev">
+                    <i class='bx bx-chevron-left'></i>
+                    <span class="visually-hidden">Ant.</span>
+                </a>
+                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button"
+                    data-bs-slide="next">
+                    <i class='bx bx-chevron-right'></i>
+                    <span class="visually-hidden">Prox.</span>
+                </a>
+            </div>
+            <!-- bx-chevron-right y left son las puntas de flecha del carrousel -->
+            <!-- End slider -->
+
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Service -->
+    <section class="service-wrapper py-5">
+        <div class="container-fluid pb-1">
+            <div class="row text-center pb-">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-2">Servicios</h2>
+                <h3 class="h4 light-300">Hacemos que el futuro sea hoy</h3>
+                <h4 class="h6 light-300">No busques más clientes, ellos te buscarán a ti.</h4>
+            </div>
+        </div>
+        <div class="service-tag py-1 ">
+            <div class="col-md-12">
+                <hr>
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-primary active shadow text-muted px-4 
+						light-300" href="#" data-filter=".project">Todo</a>
+                        <!-- btn-outline = boton transparente -->
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-primary rounded text-muted px-4 light-300" href="#"
+                            data-filter=".graphic">Gráfica</a>
+                    </li>
+                    <li class="filter-btn nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-primary rounded text-muted px-4 light-300" href="#"
+                            data-filter=".ui">UI/UX</a>
+                    </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="filter-btn nav-link btn-outline-primary rounded text-muted px-4 light-300" href="#"
+                            data-filter=".branding">Branding</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container overflow-hidden py-5">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+
+            <!-- Comienzan los trabajos recientes -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">UI/UX
+                                diseño</span>
+                            <p class="card-text">Nuestro diferencial radica en el enfoque que damos a cada proyecto.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-02.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">Redes
+                                Sociales</span>
+                            <p class="card-text">Transformamos la comunicación de empresas.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">Marketing</span>
+                            <p class="card-text"> Elaboramos estrategias increíbles para obtener resultados reales.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-04.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">Gráfica</span>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-05.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">Marketing
+                                Digital</span>
+                            <p class="card-text">Desarrollamos un Plan Efectivo y con Objetivos a la medida de tu empresa.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-06.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">Branding</span>
+                            <p class="card-text">Trabajamos con una estructura dinámica que nos permite adaptarnos sin fisuras.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-07.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">Negocios</span>
+                            <p class="card-text">Creamos su espacio en el mundo digital.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-08.jpg" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded mb-lg-3 px-lg-4 light-300">Branding</span>
+                            <p class="card-text">Recreamos el vínculo empresa-consumidor en este nuevo mundo online.</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+        </div>
+    </section>
+    <!-- End Service -->
+
+
+    <!-- Start Recent Work -->
+    <section class="py-1 mb-3">
+        <div class="container">
+            <hr>
+            <div class="recent-work-header row text-center pb-1">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-2">Nuestros Trabajos</h2>
+                <h3 class="h4 light-300">Transformá tu forma de vender</h3>              
+                <p><a href="#" class="btn btn-pink btn-block shadow px-4 py-2">Portfolio</a></p>
+            </div>
+            <div class="row gy-5 g-lg-5 mb-4">
+                <!-- End View Work -->
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-01.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Social Media</h3>
+                                <p class="card-text">Tener una presencia social óptima es imprescindible.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-02.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Web Marketing</h3>
+                                <p class="card-text">Transformamos ideas en proyectos.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-03.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Posicionamiento</h3>
+                                <p class="card-text">Combinamos lo último en tecnología.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-04.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Estudios de Mercado</h3>
+                                <p class="card-text">Nos adaptamos a las necesidades únicas de cada uno de nuestros clientes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-05.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Desarrollo de Marca</h3>
+                                <p class="card-text">Gestionamos las campañas con estrategias de contenido.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-06.jpg" alt="Card image">
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300">Diseño Creativo</h3>
+                                <p class="card-text">Un diseño superior al resto genera una vista positiva de su empresa.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Recent Work -->
+
+
+
+<!-- Start Our Team -->
+<section class="py-1 mb-3">
+    <div class="container">
+        <hr>
+        <div class="recent-work-header row text-center pb-1">
+            <h2 class="col-md-6 m-auto h2 semi-bold-600 py-2">Nuestro Equipo</h2>
+            <h4 class="h4 light-300">¡Te invitamos a conocernos!</h4>           
+            
+        </div>
+        <div class="row gy-5 g-lg-5 mb-4">           
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="./assets/img/team-02.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Alexia Vegas</h3>
+                            <p class="card-text">Directora Ejecutiva</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Start Team Member -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="./assets/img/team-03.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Plácido Rovira</h3>
+                            <p class="card-text">Director de Operaciones</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Team Member -->
+
+            <!-- Start Team Member -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="./assets/img/team-04.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Arturo Arce</h3>
+                            <p class="card-text">Director Comercial</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Team Member -->
+
+            <!-- Start Team Member -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="./assets/img/team-01.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Tania Peralta</h3>
+                            <p class="card-text">Directora de Recursos Humanos</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Team Member -->
+
+            <!-- Start Team Member -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="./assets/img/team-08.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Gregoria Aguilera</h3>
+                            <p class="card-text">Directora Financiera</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Team Member -->
+
+            <!-- Start Team Member -->
+            <div class="col-md-4 mb-3">
+                <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="./assets/img/team-07.jpg" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">Gaspar Sala</h3>
+                            <p class="card-text">Director de Marketing</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Team Member -->
+
+        </div>
+    </div>
+</section>
+<!-- End Our Team -->
+
+    <!-- Start Footer -->
+    <footer class="bg-pink pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logoJs.png" width="195" height="60"/>
+
+                    </a>
+                    <p class="text-dark my-lg-4 my-2">
+                        Transformamos ideas en proyectos, combinando lo último en tecnología con las habilidades y la innovación de nuestros expertos en negocios digitales.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.flickr.com/">
+                                <i class='bx bxl-flickr-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-dark" target="_blank" href="https://www.medium.com/">
+                                <i class='bx bxl-medium-square bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-dark"> <b>Nuestro Estudio</b></h2>
+                        <ul class="list-unstyled text-dark light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-dark" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-dark py-1" href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-dark py-1" href="work.html">Trabajos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-dark py-1" href="pricing.html">Precios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-dark py-1" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-dark"><b>Trabajos</b></h2>
+                    <ul class="list-unstyled text-dark light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-dark py-1" href="#">Marcas</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-dark py-1" href="#">Negocios</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-dark py-1" href="#">Marketing</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-dark py-1" href="#">Redes Sociales</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-dark py-1" href="#">Soluciones Digitales</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-dark py-1" href="#">Gráfica</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-dark"><b>Atendemos en:</b></h2>
+                    <ul class="list-unstyled text-dark dark-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                                href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                                href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3" id="footer2">
+            <div class="container">
+                <div class="copyright text-center">
+                    © Copyright 2022 | Marke-Ting | Diseñado con <img src="./assets/img/heart03.png" alt="" width="25" height="25"> por <strong>CAC FullStack</strong>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function () {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function () {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
