@@ -1,21 +1,13 @@
-# Redesigning an Existing Website 👩🏽‍💻
-## _Codo a Codo 4.0_ 🚀
-   
-## _Profe: Pablo Rovira_ [Sairov](https://github.com/sairov)👨🏽‍🏫
+<h1 align="center"> Redesigning an Existing Website 👩🏽‍💻 </h1>
+   <h2 align="center"> <a href="https://www.buenosaires.gob.ar/educacion/codo-codo" target="blank">Codo a Codo 4.0</a> 🚀 </h2>   
+<h3 align="center">Profe:  <a href="https://github.com/sairov" target="blank"> Pablo Rovira</a> 👨🏽‍🏫</h3>
 
-Tareas a realizar:
-
+<h4><b> Consigna de la tarea:</b></h4>
 a- Modificar íconos
-
 b- Modificar imágenes
-
 c- Modificar textos para que la web se refiera a otro tipo de empresa.
-
 d- Modificar colores
-
 e- Modificar la tipografía obtenida desde Google Font con la opción import en el archivo: estilos.css
-
-
 Si desean, pueden eliminar alguna funcionalidad o modificar su funcionamiento.
 También pueden agregar datos o cambiar la fuente de datos de los íconos.
 
