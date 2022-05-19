@@ -3,23 +3,24 @@
 <h3 align="center">Profe:  <a href="https://github.com/sairov" target="blank"> Pablo Rovira</a> 👨🏽‍🏫</h3>
 
 <h4><b> Consigna de la tarea:</b></h4>
-a- Modificar íconos
-b- Modificar imágenes
-c- Modificar textos para que la web se refiera a otro tipo de empresa.
-d- Modificar colores
-e- Modificar la tipografía obtenida desde Google Font con la opción import en el archivo: estilos.css
-Si desean, pueden eliminar alguna funcionalidad o modificar su funcionamiento.
-También pueden agregar datos o cambiar la fuente de datos de los íconos.
+<ol>
+<li> Modificar íconos </li> 
+<li> Modificar imágenes</li> 
+<li> Modificar textos para que la web se refiera a otro tipo de empresa</li> 
+<li> Modificar colores</li> 
+<li> Modificar la tipografía obtenida desde Google Font con la opción import en el archivo: estilos.css</li> 
+<li> Si desean, pueden eliminar alguna funcionalidad o modificar su funcionamiento.</li> 
+<li> También pueden agregar datos o cambiar la fuente de datos de los íconos.</li> 
+</ol>
 
------------------------------------------------------------------------------------
-Original website:
+<h4> If you scroll down you will see the original website and, below it, my version website. </h4>
+<h4> Original website:</h4>
 
 https://srotaka-project-to-modify.netlify.app
 
 ![Trabajo-Práctico-CAC-I](https://user-images.githubusercontent.com/91075823/169086597-ce99bfe8-617c-425a-a6a4-0b749db3e2d1.png)
-
------------------------------------------------------------------------------------
-My version: 
+<hr>
+<h4>My version:</h4>
 
 https://sotaka-myversion.netlify.app/
 
